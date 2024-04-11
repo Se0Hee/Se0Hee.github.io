@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>MyPage</title>
+
+    <link rel="stylesheet" href="./Mypage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>  
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <h1 class="nav-logo">강서희</h1>
+            <div class="nav-menu">
+                <ul class="nav-btn">
+                    <li>2004.12.22</li>
+                    <li>GBT/언론정보</li>
+                    <li>INFP</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hd">
+
+        <div class="container">
+            <h2 class="hd-title">Hello Everyone!</h2>
+            <p class="hd-content">만나서 반가워요</p>
+        </div>
+
+    </header>
+
+    <section class="sec">
+        <div class="container">
+
+            <article class="atc">
+                <div class="cardimg">
+                    <img src="1.jpg" alt="Your Image" class="popupImg" data-popup="popup1.jpg">
+                    <img src="2.jpg" alt="Another Image" class="popupImg" data-popup="popup2.jpg">
+                </div>
+                <p>My Taste</p>
+            </article>
+            
+            <div id="popupOverlay">
+                <div id="popupContent">
+                    <img src="" alt="Popup Image" id="popupImgPlaceholder">
+                </div>
+                <span id="closeBtn" onclick="closePopup()">&times;</span>
+            </div>
+            
+            <script src="script.js"></script>
+
+            <article class="atc">
+                <div class="cardimg">
+                    <a href="https://www.youtube.com/watch?v=uo33QyBaZ4w">
+                        <img src="music.jpg" alt="이미지2" id="linkedImg">
+                    </a>
+                </div>
+                <p>Favorite Music</p>
+            </article>
+
+            <article class="atc">
+                <div class="cardimg">
+                    <a href="https://www.youtube.com/watch?v=XyHr-s3MfCQ">
+                        <img src="netflix-icon.png" alt="이미지3" id="linkedImg">
+                    </a>
+                </div>
+                <p>Favorite Movie</p>
+            </article>
+        </div>
+    </section>
+
+    <footer class="ft">
+        <div class="container">
+            <p>사진을 눌러보세요.</p>
+            <p>&copy; KangSeohee. ALL rights reserved.</p>
+        </div>
+    </footer>  
+</body>
+
+</html>
